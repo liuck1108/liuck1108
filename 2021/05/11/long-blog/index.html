@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+  
+  <title>hexo基础使用 - Long&#39;Blog</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+  <meta name="description" content="hexo基础教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo基础使用">
+<meta property="og:url" content="http://example.com/2021/05/11/long-blog/index.html">
+<meta property="og:site_name" content="Long&#39;Blog">
+<meta property="og:description" content="hexo基础教程">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-11T10:16:23.000Z">
+<meta property="article:modified_time" content="2021-05-14T09:21:33.376Z">
+<meta property="article:author" content="Long">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
+  <link rel="stylesheet" href="/css/style.css?v=1652943904027">
+  
+  <link rel="stylesheet" href="/css/style.css?v=1652943904027">
+  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1652943904027">
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(http://sensingstore.oss-cn-shanghai.aliyuncs.com/Uploads/Tenants/5056/Common/1620636261596timg.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Long" class="mdui-btn mdui-btn-icon"><img src="http://sensingstore.oss-cn-shanghai.aliyuncs.com/Uploads/Tenants/55/Ads/u=1102128990,2792833464&amp;fm=26&amp;gp=0_2021051214072036621833.jpg" alt="Long"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Long">
+            <img src="http://sensingstore.oss-cn-shanghai.aliyuncs.com/Uploads/Tenants/55/Ads/u=1102128990,2792833464&amp;fm=26&amp;gp=0_2021051214072036621833.jpg" alt="Long" alt="Long">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>7</div>
+        <div><span>标签</span>4</div>
+        <div><span>分类</span>3</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/tags" title="标签">
+            <i class="mdui-list-item-icon nexmoefont icon-tag-fill"></i>
+            <div class="mdui-list-item-content">
+                标签
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=https://liuck1108.github.io/" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+        </form>
+    </div>
+</div>
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/CSS/">CSS</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/JavaScript/">JavaScript</a>
+          <span class="category-list-count">5</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/http/">http</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/wechat/" style="font-size: 20px;">wechat</a>
+    </div>
+    
+  </div>
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 Long
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+
+  <article>
+    
+        <div class="nexmoe-post-cover" style="padding-bottom: NaN%;"> 
+            <img data-src="http://sensingstore.oss-cn-shanghai.aliyuncs.com/Uploads/Tenants/5056/Common/1620636261596timg.jpg" data-sizes="auto" alt="hexo基础使用" class="lazyload">
+            <h1>hexo基础使用</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年05月11日</a>
+    <a><i class="nexmoefont icon-areachart"></i>86 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+</div>
+
+    
+
+    <h2 id="hexo基础教程"><a href="#hexo基础教程" class="headerlink" title="hexo基础教程"></a>hexo基础教程</h2><span id="more"></span>
+
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><ol>
+<li>hexo clean</li>
+<li>hexo s （hexo server）启动预览</li>
+<li>hexo d （hexo deploy）发布</li>
+<li>hexo n ‘文章的名字’ 生成文章 （resource文件夹下_post文件夹下md文档）</li>
+<li>hexo g (生成)</li>
+</ol>
+<h3 id="yml文件对博客样式自定义"><a href="#yml文件对博客样式自定义" class="headerlink" title="yml文件对博客样式自定义"></a>yml文件对博客样式自定义</h3><pre><code class="js">title: Long&#39;Blog
+subtitle: &#39;这是Long的笔记&#39;
+description: &#39;&#39;
+keywords:
+author: Long
+language: zh-CN
+timezone: &#39;&#39;
+</code></pre>
+
+  </article>
+
+  
+    
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>Long<br>
+    <strong>本文链接：</strong><a href="http://example.com/2021/05/11/long-blog/" title="http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;05&#x2F;11&#x2F;long-blog&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;05&#x2F;11&#x2F;long-blog&#x2F;</a><br>
+    
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/JavaScript/">JavaScript</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Hexo/" rel="tag">Hexo</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/gitalk/1.5.0/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.bootcdn.net/ajax/libs/gitalk/1.5.0/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'e7c179bc8a71a96b4042',
+        clientSecret: 'b6d3821e573702937b7879f95df3a75e920b46af',
+        id: window.location.pathname,
+        repo: 'liuck1108.github.io',
+        owner: 'liuck1108',
+        admin: 'liuck1108'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+  </div>
+</div>
+        <div class="nexmoe-post-right">
+          <div class="nexmoe-fixed">
+            <div class="nexmoe-tool"> 
+              
+                
+              
+              <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+ 
+
+<script src="/js/app.js?v=1652943904028"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+  
+
+
+
+
+
+</body>
+
+</html>
